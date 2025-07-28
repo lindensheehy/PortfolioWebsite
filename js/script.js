@@ -3,8 +3,14 @@ function doNoise() {
     const canvas = document.getElementById('noise-canvas');
     const ctx = canvas.getContext('2d');
 
+    const canvas_nav = document.getElementById('noise-canvas-nav');
+    const ctx_nav = canvas_nav.getContext('2d');
+
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+
+    canvas_nav.width = window.innerWidth;
+    canvas_nav.height = window.innerHeight * 0.1;
 
     /*
         Colors:
@@ -66,8 +72,8 @@ function doNoise() {
             for (const [px, py, hexColor] of hotspotsPixels) {
                 const dx = x - px;
                 const dy = y - py;
-                const dist = Math.sqrt(dx * dx + dy * dy) + 0.0001; // avoid divide by zero
-                const weight = 1 / (dist * dist); // quadratic falloff
+                const dist = Math.sqrt(dx * dx + dy * dy) + 0.0001;
+                const weight = 1 / (dist * dist);
 
                 totalWeight += weight;
 
@@ -88,12 +94,14 @@ function doNoise() {
             bakedImageData.data[idx] = r;
             bakedImageData.data[idx + 1] = g;
             bakedImageData.data[idx + 2] = b;
-            bakedImageData.data[idx + 3] = 255; // fully opaque
+            bakedImageData.data[idx + 3] = 255;
 
         }
     }
 
     ctx.putImageData(bakedImageData, 0, 0);
+    const slice = ctx.getImageData(0, canvas.height * 0.6, canvas_nav.width, canvas_nav.height);
+    ctx_nav.putImageData(slice, 0, 0);
 
 }
 

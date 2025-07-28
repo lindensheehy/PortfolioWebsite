@@ -17,57 +17,58 @@
 
 <body>
 
-    <canvas id="noise-canvas" style="position: fixed; top:0; left:0; width:100vw; height:100vh; pointer-events:none; z-index:-1;"></canvas>
+    <canvas id="noise-canvas"></canvas>
 
     <header>
 
-        <h1>Linden Sheehy</h1>
-        <p>Software Engineer & Low-Level Developer</p>
+        <canvas id="noise-canvas-nav"></canvas>
 
         <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a id="nav_home" href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="resume.html">Resume</a>
         </nav>
 
     </header>
 
     <main>
 
-        <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Linden — a software engineering student passionate about low-level programming, game engines, and systems design.</p>
+        <section id="hero">
+            <h1>Linden Sheehy</h1>
+            <p>Software Engineer & Systems Programmer</p>
         </section>
-
-        <section id="projects">
-        <h2>Featured Projects</h2>
-        <ul>
             
-            <li>
-            <strong>Kiwi3D Engine</strong><br />
-            A custom C++ game engine framework focused on performance and modular design.
-            </li>
+        <section id="info">
+            <h2>Welcome!</h2>
+            <p>
+                Hi, I’m Linden — a fourth-year Software Engineering student with a passion for low-level programming, game engines, and systems design.
+                <br><br>
+                This is my personal portfolio site. It’s a hub for everything professionally relevant about me.
+                <br><br>
+                Contents include:
+            </p>
+            <ul>
+                <li>
+                    <strong>About Me</strong> 
+                    — A quick overview of my background
+                </li>
 
-            <li>
-            <strong>Rust ESP Overlay</strong><br />
-            An extra sensory perception overlay for the game rust, showcasing reverse engineering skills.
-            </li>
-            
-            <li>
-            <strong>Plants vs. Zombies Modding API</strong><br />
-            A C++ API allowing interaction with the game’s runtime to create mods.
-            </li>
+                <li>
+                    <strong>My Projects</strong> 
+                    — Personal and academic work worth sharing
+                </li>
 
-        </ul>
-        </section>
+                <li>
+                    <strong>How to Contact Me</strong> 
+                    — Email, GitHub, LinkedIn
+                </li>
 
-        <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:linden@example.com">linden@example.com</a></p>
-        <p>
-            GitHub: <a href="https://github.com/lindensheehy" target="_blank" rel="noopener">github.com/lindensheehy</a><br />
-            LinkedIn: <a href="https://linkedin.com/in/lindensheehy" target="_blank" rel="noopener">linkedin.com/in/lindensheehy</a>
-        </p>
+                <li>
+                    <strong>My Resume</strong> 
+                </li>
+            </ul>
         </section>
         
     </main>

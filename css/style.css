@@ -1,4 +1,3 @@
-/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
@@ -8,13 +7,8 @@
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  /* background: linear-gradient(
-    150deg,
-    #f0f4f8 0%, 
-    #96aec8 50%,
-    #597999 100%
-  ); */
-  color: #102a43;
+  background: #121821;
+  color: #E1E6EB;
   padding: 1rem 2rem;
   min-height: 100vh;
   display: flex;
@@ -26,29 +20,87 @@ header {
   margin-bottom: 2rem;
 }
 
-header h1 {
-  font-weight: 700;
+#nav_home {
+  margin: 0 2rem;
+  color: #b6cbff;
+  text-decoration: none;
+  font-weight: 800;
   font-size: 2.5rem;
-  margin-bottom: 0.3rem;
+  transition: color 0.3s ease;
+  z-index: 101;
 }
 
-header p {
+#nav_home:hover {
+  color: #d3e0ff;
+}
+
+#noise-canvas {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100vw; 
+  height: 100vh; 
+  pointer-events: none; 
+  z-index: -1;
+}
+
+#noise-canvas-nav {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100vw; 
+  height: 10vh; 
+  pointer-events: none; 
+  z-index: 100;
+}
+
+#hero {
+  text-align: center;
+  margin-bottom: 7rem;
+  margin-top: 10rem;
+}
+
+#hero h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 0.3rem;
+  color: #E1E6EB;
+}
+
+#hero p {
   font-weight: 400;
   font-size: 1.2rem;
-  color: #334e68;
+  color: #A3B1C2;
   margin-bottom: 1rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgb(122, 140, 163);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  z-index: 101;
 }
 
 nav a {
   margin: 0 1rem;
-  color: #627d98;
+  color: #85A8FF;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 800;
+  font-size: 1.2rem;
   transition: color 0.3s ease;
+  z-index: 101;
 }
 
 nav a:hover {
-  color: #1f2937;
+  color: #b4cbff;
 }
 
 main {
@@ -65,22 +117,35 @@ h2 {
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #627d98;
+  border-bottom: 2px solid rgb(122, 140, 163);
   padding-bottom: 0.3rem;
+  color: #E1E6EB;
 }
 
-ul {
+#projects ul {
   list-style: none;
 }
 
-li {
+#projects li {
   margin-bottom: 1.2rem;
   font-weight: 500;
+  color: #A3B1C2;
+}
+
+#info ul {
+  padding-left: 1.5rem;  /* Indent bullets */
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  list-style-type: disc;  /* Default bullet style */
+}
+
+#info li {
+  margin-bottom: 0.3rem;  /* Slight spacing between items */
 }
 
 footer {
   text-align: center;
   padding: 1rem 0;
-  color: #627d98;
+  color: #6C7B8A;
   font-size: 0.9rem;
 }
