@@ -1,0 +1,34 @@
+#contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;          /* center the entire list */
+  max-width: 320px;
+  display: flex;           /* make the list items horizontal */
+  justify-content: center; /* center the items */
+  gap: 2rem;               /* space between each icon+text */
+}
+
+#contact-info li {
+  margin-bottom: 0;        /* remove vertical spacing since horizontal */
+}
+
+#contact-info a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  gap: 0.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+#contact-info a:hover,
+#contact-info a:focus {
+  color: #4a90e2; /* your highlight color */
+}
+
+#contact-info i {
+  font-size: 3rem;       /* bigger icons for horizontal layout */
+  width: auto;             /* no forced width */
+  text-align: center;
+}
