@@ -10,6 +10,6 @@
 }
 
 #content p {
-  margin-bottom: 1.5rem; /* Adjust to taste — 1.5rem is a nice clean gap */
-  line-height: 1.6;      /* Optional: improves readability */
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
