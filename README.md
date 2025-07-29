@@ -1,5 +1,9 @@
-# Portfolio Website
+# PortfolioWebsite
 
-This site is currently a work in progress.
+This repository contains the source code for my personal portfolio website.  
+The site showcases my projects, background, contacts, and resume.
 
-**Nothing is final** — layout, styles, and content are all subject to change.
+## Live Site
+
+Check out the live website here:  
+[lindensheehy.github.io/PortfolioWebsite/](https://lindensheehy.github.io/PortfolioWebsite/)
