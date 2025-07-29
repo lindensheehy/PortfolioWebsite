@@ -1,22 +1,22 @@
 #contents {
     text-align: center;
     margin: 2rem auto;
-    max-width: 800px; /* optional: keeps things nicely readable */
+    max-width: 800px;
 }
 
 #contents p {
     margin: 0.5rem 0;
     font-size: 1rem;
-    color: #ddd; /* adjust to your site’s text color if needed */
+    color: #ddd;
 }
 
 #contents a {
-    color: #58a6ff; /* change this to whatever color fits your theme */
+    color: #58a6ff;
     text-decoration: underline;
 }
 
 #contents a:hover {
-    color: #8ecfff; /* lighter version for hover */
+    color: #8ecfff;
 }
 
 #contents iframe {
