@@ -1,0 +1,15 @@
+#content ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  list-style-type: disc;
+}
+
+#content li {
+  margin-bottom: 0.3rem;
+}
+
+#content p {
+  margin-bottom: 1.5rem; /* Adjust to taste — 1.5rem is a nice clean gap */
+  line-height: 1.6;      /* Optional: improves readability */
+}
