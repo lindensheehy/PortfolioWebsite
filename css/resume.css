@@ -23,4 +23,6 @@
     border: none;
     width: 1200px;
     height: 1800px;
+    display: block;
+    margin: 2rem auto;
 }
