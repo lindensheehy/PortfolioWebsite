@@ -5,18 +5,18 @@
 }
 
 #contents p {
-    margin: 0.5rem 0;
-    font-size: 1rem;
-    color: #ddd;
+    margin: 0.5rem 0 !important;
+    font-size: 1rem !important;
+    color: #ddd !important;
 }
 
 #contents a {
-    color: #58a6ff;
-    text-decoration: underline;
+    color: #58a6ff !important;
+    text-decoration: underline !important;
 }
 
 #contents a:hover {
-    color: #8ecfff;
+    color: #8ecfff !important;
 }
 
 #contents iframe {
