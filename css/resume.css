@@ -1,22 +1,22 @@
 #contents {
-    text-align: center !important;
-    margin: 2rem auto !important;
-    max-width: 100% !important;
+    text-align: center;
+    margin: 2rem auto ;
+    max-width: 100%;
 }
 
 #contents p {
-    margin: 0.5rem 0 !important;
-    font-size: 1rem !important;
-    color: #ddd !important;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #ddd;
 }
 
 #contents a {
-    color: #58a6ff !important;
-    text-decoration: underline !important;
+    color: #58a6ff;
+    text-decoration: underline;
 }
 
 #contents a:hover {
-    color: #8ecfff !important;
+    color: #8ecfff;
 }
 
 #contents iframe {
@@ -25,17 +25,5 @@
     margin: 2rem auto !important;
     width: 90% !important;
     max-width: 1200px !important;
-    height: 1800px !important;
-}
-
-@media (max-width: 768px) {
-    #contents iframe {
-        height: 1200px !important;
-    }
-}
-
-@media (max-width: 480px) {
-    #contents iframe {
-        height: 900px !important;
-    }
+    height: 1200px !important;
 }
